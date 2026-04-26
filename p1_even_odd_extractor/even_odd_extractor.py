@@ -1,3 +1,4 @@
+import os
 class OddEvenExtractor:
     def __init__(self, filename: str = "./numbers.txt"):
         self.filename =  filename
@@ -8,6 +9,12 @@ class OddEvenExtractor:
             
         return numbers
     
+    def file_exists(self, file: str):
+        pass
     
+    def write_file(self, filename: str):
+        pass
         
+    def categorize(self):
+        pass
 OddEvenExtractor().read_file()
