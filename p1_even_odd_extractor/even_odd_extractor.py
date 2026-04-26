@@ -1,11 +1,13 @@
 class OddEvenExtractor:
-    def __init__(self, filename: str = "numbers.txt"):
+    def __init__(self, filename: str = "./numbers.txt"):
         self.filename =  filename
         
     def read_file(self):
         with open(self.filename, 'r') as file:
-            numbers = file.readlines()
+            numbers = [number.rstrip("\n") for number in file.readlines()]
             
-        print(numbers)
+        return numbers
+    
+    
         
-OddEvenExtractor().read_file
+OddEvenExtractor().read_file()
