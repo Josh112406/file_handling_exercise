@@ -17,14 +17,20 @@ class OddEvenExtractor:
             return False
         return True
     
-    def write_file(self, filename: str):
-        pass
-        
+    def write_file(self, filename: str, content: int):
+        if not self.file_exists(filename):
+            with open(filename, 'w') as file:
+                file.write(f"{content}\n")
+        else:
+            with open(filename, 'w') as file:
+                file.write(f"{content}\n")
+                
     def categorize(self):
         data = self.read_file()
-        odd = []
-        even = []
         for number in data:
             if number % 2 == 0:
-                even.append
+
+            else:
+                odd.append(number)
+            
 OddEvenExtractor().read_file()
