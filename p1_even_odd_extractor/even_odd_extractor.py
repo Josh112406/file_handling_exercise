@@ -31,6 +31,6 @@ class OddEvenExtractor:
             if number % 2 == 0:
                 self.write_file("even.txt", number)
             else:
-                self.write_file("even.txt", number)
+                self.write_file("odd.txt", number)
                 
-OddEvenExtractor().read_file()
+OddEvenExtractor().categorize()
