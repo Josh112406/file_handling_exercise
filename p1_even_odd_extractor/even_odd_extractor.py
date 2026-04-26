@@ -34,4 +34,3 @@ class EvenOddExtractor:
             else:
                 self.write_file("odd.txt", number)
                 
-OddEvenExtractor().categorize()
