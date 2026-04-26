@@ -7,12 +7,14 @@ class WriteMulipleLines:
             with open(self.filename, "a") as file:
                 while True:
                     text = input("Enter line: ")
-                    more = input("Are there more lines (y/n)? ")
-                    
+                    more = input("Are there more lines (y/n)? ").lower()
                     file.write(f"{text}\n")
+
                     if more != "y":
                         break
                     
         except:
             print("Error writing to file.")
             
+if __name__ == "__main__":
+    WriteMulipleLines().write_multiple_lines()

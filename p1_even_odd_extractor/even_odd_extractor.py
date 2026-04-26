@@ -23,4 +23,7 @@ class EvenOddExtractor:
                 self.write_file("even.txt", number)
             else:
                 self.write_file("odd.txt", number)
-                
+        
+if __name__ == "__main__":
+    extractor = EvenOddExtractor()
+    extractor.categorize()
