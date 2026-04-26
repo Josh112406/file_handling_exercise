@@ -1,0 +1,20 @@
+Juan Dela Cruz,92
+Maria Clara,88
+Jose Rizal,99
+Andres Bonifacio,85
+Emilio Aguinaldo,78
+Apolinario Mabini,94
+Gabriela Silang,91
+Melchora Aquino,89
+Antonio Luna,96
+Marcelo del Pilar,84
+Salamat Hashim,77
+Lapu-Lapu,93
+Cory Aquino,86
+Ramon Magsaysay,90
+Miriam Santiago,98
+Liza Soberano,82
+Catriona Gray,95
+Pia Wurtzbach,87
+Manny Pacquiao,80
+Hidilyn Diaz,97
