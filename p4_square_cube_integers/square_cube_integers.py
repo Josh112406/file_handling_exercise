@@ -24,6 +24,6 @@ class ProcessIntegers:
         for number in numbers:
             if number % 2 == 0:
                 self.write_file(self.even_filename, number ** 2)
-                
-p = ProcessIntegers()
-p.process_integers()
+            else:
+                self.write_file(self.odd_filename, number ** 3)
+
