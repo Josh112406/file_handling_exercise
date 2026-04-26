@@ -4,7 +4,7 @@ class ProcessIntegers:
         self.odd_filename = "triple.txt"
         self.even_filename = "double.txt"
         
-    def read_file(self):
+    def read_file(self) -> list[int]:
         try:
             with open(self.filename, 'r') as file:
                 return file.readlines()
