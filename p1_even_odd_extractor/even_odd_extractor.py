@@ -7,8 +7,8 @@ class OddEvenExtractor:
         try:
             with open(self.filename, 'r') as file:
                 numbers = [int(number.rstrip("\n")) for number in file.readlines()]
-    
             return numbers
+        
         except:
             print("Make sure the file only contains integers.")
             
@@ -29,8 +29,8 @@ class OddEvenExtractor:
         data = self.read_file()
         for number in data:
             if number % 2 == 0:
-
+                self.write_file("even.txt", number)
             else:
-                odd.append(number)
-            
+                self.write_file("even.txt", number)
+                
 OddEvenExtractor().read_file()
