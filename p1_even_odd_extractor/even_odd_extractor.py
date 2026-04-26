@@ -28,7 +28,6 @@ class EvenOddExtractor:
     def categorize(self):
         data = self.read_file()
         for number in data:
-            print(number)
             if number % 2 == 0:
                 self.write_file("even.txt", number)
             else:
