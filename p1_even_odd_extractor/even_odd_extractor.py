@@ -11,19 +11,10 @@ class EvenOddExtractor:
         
         except:
             print("Make sure the file only contains integers.")
-            
-    def file_exists(self, file: str) -> bool:
-        if not os.path.exists(file):
-            return False
-        return True
-    
+
     def write_file(self, filename: str, content: int):
-        if not self.file_exists(filename):
-            with open(filename, 'w') as file:
-                file.write(f"{content}\n")
-        else:
-            with open(filename, 'a') as file:
-                file.write(f"{content}\n")
+        with open(filename, 'a') as file:
+            file.write(f"{content}\n")
                 
     def categorize(self):
         data = self.read_file()
