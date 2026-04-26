@@ -22,12 +22,13 @@ class OddEvenExtractor:
             with open(filename, 'w') as file:
                 file.write(f"{content}\n")
         else:
-            with open(filename, 'w') as file:
+            with open(filename, 'a') as file:
                 file.write(f"{content}\n")
                 
     def categorize(self):
         data = self.read_file()
         for number in data:
+            print(number)
             if number % 2 == 0:
                 self.write_file("even.txt", number)
             else:
